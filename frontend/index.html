@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Paulo Torres - Kanban</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Paulo Torres - Kanban</h1>
+
+<form id="form">
+  <input id="nome" placeholder="Nome" required />
+  <input id="descricao" placeholder="Descrição" required />
+  <select id="status">
+    <option value="a fazer">A fazer</option>
+    <option value="em execução">Em execução</option>
+    <option value="feito">Feito</option>
+  </select>
+  <button type="submit">Adicionar</button>
+</form>
+
+<div id="kanban">
+  <div class="col" id="a-fazer"><h2>A fazer</h2></div>
+  <div class="col" id="em-execucao"><h2>Em execução</h2></div>
+  <div class="col" id="feito"><h2>Feito</h2></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
